@@ -5,5 +5,5 @@
 // const {oddeven}=require('./02_seconde.js')
 // oddeven(4)
 
-const {a}=require('./02_seconde.js')
-a(2)
+const { sqrRoot } = require('./02_seconde.js')
+sqrRoot(4)

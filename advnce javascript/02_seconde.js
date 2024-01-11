@@ -16,7 +16,8 @@
 // module.exports={oddeven}
 
 // example 3
-function squareroot(a){
-   Math.SQRT2(a)
+function sqrRoot(a){
+   let b=Math.sqrt(a)
+   console.log(b);
 }
-module.exports={a}
+module.exports = {sqrRoot}
