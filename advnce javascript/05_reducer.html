@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // example 1 
+        let a=[1,2,3,4,5,6,7,8,9]
+        let b=a.reduce(sum)
+        function sum(total,value){
+            console.log(total,value);
+            return total+value
+        }
+        console.log(b);
+
+        // example 2
+        let str=["javascript ","is","scripting","language"]
+
+        let data=str.reduce(joinstr)
+        function joinstr(first,seconde){
+            // console.log(first,seconde);
+            return first+ " " + seconde
+        }
+        console.log(data);
+
+        // example 3  reduce right
+
+        let arr =['1','2','3','4','5','6','7','8']
+        let str1=arr.reduceRight(concat)
+        function concat(pre,next){
+              return pre+next
+        }
+         console.log(str1);
+
+        //  example 4   arro function thi  aane call karva mate aakhu functon lakhvu pade
+        let arr1 =['rameshbhai','hemali','thesiya']
+        let  str2=arr1.reduceRight((prew,next)=>{
+            return prew+ ' ' +next
+        })
+        console.log(str2);
+
+
+        // example 5
+        let d=['1','2','3','4','5','6']
+        const concatdata1=(pre,next)=>{
+            return pre+next
+        }
+        let sr=d.reduceRight(concatdata1)
+        console.log(sr);
+
+    </script>
+</body>
+</html>

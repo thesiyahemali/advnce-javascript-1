@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   1.Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
+        var challenge = '30 days of javascript'
+        //    let const
+
+        // 2.Print the string on the browser console using console.log()
+        var challenge = '30 days of javascript'
+        console.log(challenge);
+
+        // 3.print the length of the string on the browser console using console.log()
+        var cha = '30 days of javascript'
+        console.log(cha.length);
+
+        //  4.Change all the string characters to capital letters using toUpperCase() method
+        var cha = '30 dyas of javascript'
+        console.log(cha.toLocaleUpperCase());
+
+        // 5.Change all the string characters to lowercase letters using toLowerCase() method
+        var cha = '30 dyas of javascript'
+        console.log(cha.toLocaleLowerCase());   
+
+        // 6.Cut (slice) out the first word of the string using substr() or substring() method 
+        // substr jetli index api aetlu index mathi remove thaye 
+        let chall = '30 dyas of javascript'
+        console.log(chall.substr(5));
+        console.log(chall.substring(2));
+
+        //   7.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
+        // slice jetli index api hoy aetli aaeve baki nu remove thaye
+        let a = '30 days of javascript'
+        console.log(a.slice(0, 8));
+
+        //   8.Check if the string contains a word Script using includes() method
+        // includes ma strin hoy tema true ya false aaeve
+        let b = 'script'
+        console.log(b.includes('script'));
+        console.log(b.includes('Script'));
+
+        //   9.Split the string into an array using split() method
+        // split ma string tukda kare
+        let c = '30 days of javascript'
+        console.log(c.split(""));
+
+        //   10.Split the string 30 Days Of JavaScript at the space using split() method
+        let d = '30 days of javascript'
+        console.log(d.split(" "));
+
+        //   11.'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+        // splice ma space muki ne splice thaye
+        let e = ['google', 'ibm', 'facebok', 'oracle', 'apple', 'microsoft', 'amazon']
+        console.log(e.splice(' '));
+
+        // 12.Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
+        // replace ma strig ma javascript in jagya ae python 
+        let f = '30 days of javascript'
+        console.log(f.replace('javascript', 'python'));
+
+        //   13.What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
+        // let p = '30 days of javascript'
+        // console.log(p.charAt(19));
+
+        //   14.What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
+        //   let s='30 days of javascript'
+        //    let result=s.charCodeAt('j')
+        //    console.log(result);
+
+
+
+
+    </script>
+</body>
+
+</html>
