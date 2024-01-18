@@ -52,6 +52,7 @@
         console.log(c.split(""));
 
         //   10.Split the string 30 Days Of JavaScript at the space using split() method
+        // spliit ma space muki ne karye to ek ek ord aaeve
         let d = '30 days of javascript'
         console.log(d.split(" "));
 
@@ -66,15 +67,44 @@
         console.log(f.replace('javascript', 'python'));
 
         //   13.What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
-        // let p = '30 days of javascript'
-        // console.log(p.charAt(19));
+        // charat ma jetli index apye te word aaeve
+        let p = '30 days of javascript'
+        console.log(p.charAt(19));
 
         //   14.What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
-        //   let s='30 days of javascript'
-        //    let result=s.charCodeAt('j')
-        //    console.log(result);
+        // chartcodeat ma tano code aaeve je apo hoy te
+          let s='30 days of javascript'
+           let result=s.charCodeAt('j')
+           console.log(result);
 
+        //    15.Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+        // indexof ma string m jetli jagya ae hase aeni index batse se
+        let frst='30 days of javascript '
+        console.log(frst.indexOf('j'));
 
+        // 16.Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
+        // lastndexof ma laste math number count krse
+        let laste='30 dyas of javascript'
+        console.log(laste.lastIndexOf('a'));
+
+        // 17.Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+        // indextof ma sentece ma first letter apo to bhi aej ndex count kare and aakho word karo to bhi aej ndex count karse
+        let setntence='you cannot end a sentence with because bacsuse bacsse is a conjuction'
+        console.log(setntence.indexOf('because'));
+        console.log(setntence.indexOf('b'));
+
+        //   18.Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+        // sentenc1 ma lastindex hoy tea laste mathii index count karse
+        let sentence1='you cannto end a sentecnce with because because because is a conjuncation'
+        console.log(sentence1.lastIndexOf('because'));
+        console.log(sentence1.lastIndexOf('b'));
+
+        // 19.Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+        
+        let search ='you cannot end a sentence with because because because s a conjncation'
+        console.log(search.search(' because'));
+        console.log(search.search('b'));
 
 
     </script>
