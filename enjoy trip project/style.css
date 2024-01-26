@@ -202,7 +202,7 @@ margin-left: 23.50%;
     transition: 0.5s all;
 }
 /* .section3 */
-.section3{
+/* .section3{
     width: 100%;
     height: auto;
     margin: 5% 0px;
@@ -304,7 +304,7 @@ margin-left: 23.50%;
   }
 
   /* main1 */
-
+/* 
   .section3 .main1{
     display: flex;
     margin-top: 3%;
@@ -422,12 +422,116 @@ margin-left: 23.50%;
    .section3 .main1 .right1 i:hover {
     display: inline-block;
     vertical-align: middle;
-    transform: translateZ(0) scale(0.75); /* Combine the two transform properties */
+    transform: translateZ(0) scale(0.75);
     position: relative;
     overflow: hidden;
     background: #ffffff;
     transition-duration: 0.3s;
-    color: black; }
+    color: black; 
+}  */
+
+
+  .section3 .hvr-radial-in {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    transition-duration: 0.3s;  
+}
+.section3  .services-icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: solid 3px #ff9800;
+    line-height: 80px;
+    margin: 0 auto;
+}
+.section3  .services-icon:hover .fa {
+    color: #000000; 
+}
+.section3 .hvr-radial-in:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff9800;
+    border-radius: 100%;
+    transform: scale(2);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; 
+}
+.section3 .hvr-radial-in:hover:before{
+    transform: scale(0); 
+}
+.section3 .services-icon i.fa {
+    color: #ffffff;
+    font-size: 2em;
+} 
+/* .section4 */
+.section4{
+    border: 2px solid red;
+    margin-top: 5%;
+    width: 20%;
+}
+.section4 h6{
+    text-align: center;
+    
+}
+.section4 .main{
+display: inline-block;
+vertical-align: middle;
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+backface-visibility: hidden;
+position: relative;
+overflow: hidden;
+background: #ffffff;
+transition-duration: 0.3s;
+}
+.section4 .icon{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: solid 3px #ff9800;
+    line-height: 80px;
+    margin: 0 auto;
+}
+.section4 .main:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff9800;
+    border-radius: 100%;
+    transform: scale(2);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; 
+}
+.section4 .main:hover:before{
+    transform: scale(0); 
+}
+.section4 .icon i.fa-solid {
+    color:#ffffff;
+    font-size: 2em;
+}
+.section4 .icon:hover .fa-solid {
+    color: #000000; 
+}
+
+
+/* .section4 .content{
+    background-image: url(img/img4.jpg);
+    height: 400px;
+} */
 
  
-

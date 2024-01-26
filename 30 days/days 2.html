@@ -27,7 +27,7 @@
 
         // 5.Change all the string characters to lowercase letters using toLowerCase() method
         var cha = '30 dyas of javascript'
-        console.log(cha.toLocaleLowerCase());   
+        console.log(cha.toLocaleLowerCase());
 
         // 6.Cut (slice) out the first word of the string using substr() or substring() method 
         // substr jetli index api aetlu index mathi remove thaye 
@@ -73,38 +73,134 @@
 
         //   14.What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
         // chartcodeat ma tano code aaeve je apo hoy te
-          let s='30 days of javascript'
-           let result=s.charCodeAt('j')
-           console.log(result);
+        let s = '30 days of javascript'
+        let result = s.charCodeAt('j')
+        console.log(result);
 
         //    15.Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
         // indexof ma string m jetli jagya ae hase aeni index batse se
-        let frst='30 days of javascript '
+        let frst = '30 days of javascript '
         console.log(frst.indexOf('j'));
 
         // 16.Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
         // lastndexof ma laste math number count krse
-        let laste='30 dyas of javascript'
+        let laste = '30 dyas of javascript'
         console.log(laste.lastIndexOf('a'));
 
         // 17.Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
         // indextof ma sentece ma first letter apo to bhi aej ndex count kare and aakho word karo to bhi aej ndex count karse
-        let setntence='you cannot end a sentence with because bacsuse bacsse is a conjuction'
+        let setntence = 'you cannot end a sentence with because bacsuse bacsse is a conjuction'
         console.log(setntence.indexOf('because'));
         console.log(setntence.indexOf('b'));
 
         //   18.Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
         // sentenc1 ma lastindex hoy tea laste mathii index count karse
-        let sentence1='you cannto end a sentecnce with because because because is a conjuncation'
+        let sentence1 = 'you cannto end a sentecnce with because because because is a conjuncation'
         console.log(sentence1.lastIndexOf('because'));
         console.log(sentence1.lastIndexOf('b'));
 
         // 19.Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-        
-        let search ='you cannot end a sentence with because because because s a conjncation'
+
+        let search = 'you cannot end a sentence with because because because s a conjncation'
         console.log(search.search(' because'));
         console.log(search.search('b'));
+
+        //20. Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '
+
+        //let`s add some white sapce at the strat and end 
+        let chae = '   30 dyas of javascript   '
+
+        //let`s first check for the lenthe
+        console.log(chae.length);
+        //the solution
+        console.log(chae.trim());
+        //white space roome and lenthe finde
+        console.log(chae.trim().length);
+
+        //21. Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+        //    startwith sting aenathi chalu thaye se k nay te batve ane true an false m javbe aaeve
+        let che = '30 dyas of javascript'
+        console.log(che.startsWith(3));
+        console.log(che.startsWith(0));
+
+        // 22.Use endsWith() method with the string 30 Days Of JavaScript and make the result true
+        //   endithds ma end mathi string start thaye se k ny te batve anser tre ya false ma aaeve
+        let chea = '30 days of javascript'
+        console.log(chea.endsWith('t'));
+        console.log(chea.endsWith('p'));
+
+        // 23.Use match() method to find all the a’s in 30 Days Of JavaScript
+        // match method ma string ma aena jevo word se k ny ae batve ane g aetle golbal tarikhe lakhi ne karvi to badha aena jeva word aaeve ae batve
+
+        let challe = '30 days of javascript'
+        console.log(challe.match('a'));
+        console.log(challe.match(/a/g));
+
+        // 24.Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+        // concat thi join thaye 6  be String
+
+        let ke = '30 days of'
+        let kew = 'javascript'
+        console.log(ke.concat(kew));
+
+        // 25.Use repeat() method to print 30 Days Of JavaScript 2 times
+        //   repeat method thi jetli var repate karvu hoy aetli var string repeat thaye
+        let ch = '30 days of javascript '
+        console.log(ch.repeat(2));
+
+        //<h1>  excerice 2 <h1>
+
+
+        //  1.Using console.log() print out the following statement:
+
+        // The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+
+        let qoute = "The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another."
+        console.log(qoute);
+
+        // II. Escaping the inner quotes with a backslash.
+        let qoute1 = 'The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.'
+        console.log(qoute1);
+
+        // III. Using template literals or back ticks. ``
+        let qoute2 = ` The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another`
+        console.log(qoute2);
+
+        // 2.Using console.log() print out the following quote by Mother Teresa:
+
+        // "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+
+        let motherteresa = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+        console.log(motherteresa);
+
+        // 3.Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+        // I. using the inbuilt Number object.
+        console.log(typeof '10' === typeof 10);
+        console.log(typeof Number('10') === typeof 10);
+
+        //    II. Appending + sign
+        console.log(typeof +'10' === typeof 10);
+
+        // III. Using parseInt
+        console.log(typeof parseInt('10') === typeof 10);
+
+        // 4. Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+        console.log(parseFloat('9.8') === 10);
+        console.log(Math.ceil(parseFloat('9.8')) === 10);
+        console.log(Math.round(parseFloat('9.8')) === 10);
+
+        // 5. Check if 'on' is found in both python and jargon
+
+        let language = 'python', notlanguage = 'jarngo'
+        console.log(language.includes('on') &&  notlanguage.includes('on'));
+        console.log(/on/g.test(language) && /on/g.test( notlanguage));
+
+        // 6.I hope this course is not full of jargon. Check if jargon is in the sentence.
+        
+
 
 
     </script>
